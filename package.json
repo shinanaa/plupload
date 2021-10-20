@@ -1,0 +1,19 @@
+{
+  "name": "plupload-antd-react",
+  "version": "1.0.7",
+  "description": "Fragment upload component integrating plupload and antd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "annalee",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.16.13",
+    "lodash": "^4.17.21",
+    "plupload": "^2.3.7",
+    "react": "^17.0.2"
+  },
+  "keywords": ["plupload", "react", "antDesign"]
+}
