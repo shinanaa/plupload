@@ -1,6 +1,6 @@
 {
   "name": "plupload-antd-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fragment upload component integrating plupload and antd",
   "main": "index.js",
   "scripts": {

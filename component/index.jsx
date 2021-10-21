@@ -77,7 +77,7 @@ class PlUpload extends React.Component {
         });
         //队列中的某一个文件上传完成后
         this.uploader.bind('FileUploaded', (up, file, responseObject) => {
-            const stateFiles = this.state.files;
+            const stateFiles = JSON.parse(JSON.stringify(this.state.files));
             const response = JSON.parse(responseObject.response)
             _.map(stateFiles, (val, key) => {
                 if (val.id === file.id) {
@@ -141,8 +141,12 @@ class PlUpload extends React.Component {
         if (this.checkUploader()) {
             this.uploader.refresh();
         }
-        if (this.state?.files?.length && this.state.files.every(item => item.hasOwnProperty('response'))) {
-            this.props.getFileList(this.state.files);
+        if(this.state.files != prevState.files){
+            if(this.state?.files?.length && this.state.files.every(item => item.hasOwnProperty('response')) ||
+                this.state?.files?.length == 0
+            ){
+                this.props.getFileList(this.state.files);
+            }
         }
     }
 
@@ -151,7 +155,9 @@ class PlUpload extends React.Component {
     }
 
     initUploader = () => {
-        this.setState({files: this.props.defaultFileList})
+        if(this.props.defaultFileList){
+            this.setState({files: this.props.defaultFileList})
+        }
         this.uploader = new plUploadJs.Uploader(_.extend({
             container: `plupload_${this.props.id}`,
             runtimes: 'html5',

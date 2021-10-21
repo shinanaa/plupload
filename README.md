@@ -66,16 +66,20 @@ import BigPlUpload from 'plupload-antd-react'
 
 ## Version Description
 
-### before 1.0.5
-```
+### 1.0.0 ~ 1.0.5
+
 - Realize the function of uploading and slicing files
 - You can dynamically set the number of uploaded files, file type, file size, and chunk size
 - return the list of uploaded files
 - Customize the upload button text and upload path
-```
-### 1.0.6 / 1.0.7
-```
+
+### 1.0.6 ～ 1.0.7
+
 - Add the file echo function
 - Fixed the upload limit failure caused by file echo
 - Optimized the style of the list of files uploaded successfully
-```
+
+### 1.0.8
+
+- Fix the problem of not returning to the file list after uploading
+- Fix the problem that the list still has values after deleting files
