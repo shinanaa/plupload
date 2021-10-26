@@ -142,7 +142,8 @@ class PlUpload extends React.Component {
             this.uploader.refresh();
         }
         if(this.state.files != prevState.files){
-            if(this.state?.files?.length && this.state.files.every(item => item.hasOwnProperty('response')) ||
+            // if(this.state?.files?.length && this.state.files.every(item => item.hasOwnProperty('response')) ||
+            if(this.state?.files?.length && this.state.files.every(item => item.uploaded) ||
                 this.state?.files?.length == 0
             ){
                 this.props.getFileList(this.state.files);

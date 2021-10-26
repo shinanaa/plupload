@@ -1,6 +1,6 @@
 {
   "name": "plupload-antd-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Fragment upload component integrating plupload and antd",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
     "plupload": "^2.3.7",
     "react": "^17.0.2"
   },
-  "keywords": ["plupload", "react", "antDesign"]
+  "keywords": ["plupload", "react", "antDesign"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinanaa/antd-plupload.git"
+  }
 }

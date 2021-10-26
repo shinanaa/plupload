@@ -10,21 +10,21 @@
 
 ## Installation
 
-```
-$ npm i --save plupload-antd-react
+```javascript
+npm i plupload-antd-react
 ```
 
 ## Example
 
 ### Import
 
-```
+```javascript
 import BigPlUpload from 'plupload-antd-react'
 ```
 
 ### use in page
 
-```
+```javascript
 <BigPlUpload
   getFileList={(fileList) => {
     console.log(fileList);
@@ -83,3 +83,9 @@ import BigPlUpload from 'plupload-antd-react'
 
 - Fix the problem of not returning to the file list after uploading
 - Fix the problem that the list still has values after deleting files
+
+### 1.0.9
+
+- Modify the update condition of the returned file list
+- Fixed the problem of resubmitting missing files after multiple file echo
+
