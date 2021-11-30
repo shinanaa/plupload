@@ -10,7 +10,7 @@
 
 ## Installation
 
-```javascript
+```
 npm i plupload-antd-react
 ```
 
@@ -52,7 +52,6 @@ import BigPlUpload from 'plupload-antd-react'
 - autoUpload    This value can be set to true or false
                 If true, it means that the file is uploaded immediately after selection
                 If false, it means that selecting files and uploading files are carried out in two steps
-                Currently only true is supported.The case of false will be improved later
 - buttonSelect  Select the text of the File button. Default is 'select'
 - maxSize       Size limit for a single uploaded file. The default unit is byte and other units can be passed in as strings with units
 - maxLength     Maximum number of uploaded files
@@ -88,4 +87,8 @@ import BigPlUpload from 'plupload-antd-react'
 
 - Modify the update condition of the returned file list
 - Fixed the problem of resubmitting missing files after multiple file echo
+
+### 1.1.0
+
+- Supports the function of selecting and uploading files step by step
 
